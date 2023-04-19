@@ -1,0 +1,160 @@
+/* Paleta de colores */
+:root {
+  --color-primary: #175f2f;
+  --color-secondary: #81c784;
+  --color-tertiary: #e6ffe6;
+  --color-text: #212121;
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header p {
+  display: block;
+}
+
+.header h1 {
+  color: var(--color-primary);
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.header h2 {
+  color: var(--color-primary);
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--color-secondary);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* Columnas */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+/* Habilidades */
+.skills,
+.languages {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.skills li,
+.languages li {
+  background-color: var(--color-tertiary);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+.skills li:last-child,
+.languages li:last-child {
+  margin-bottom: 0;
+}
+
+.skills li:hover,
+.languages li:hover {
+  background-color: var(--color-secondary);
+  cursor: pointer;
+}
+
+/* Experiencia laboral y educación */
+.work-experience,
+.education {
+  margin-bottom: 30px;
+}
+
+.work-experience h3,
+.education h3 {
+  color: var(--color-primary);
+  margin-top: 0;
+}
+
+.work-experience .subtitle,
+.education .subtitle {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+/* Contacto */
+.contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li {
+  margin-bottom: 10px;
+}
+
+.contact li strong {
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-right: 10px;
+}
+
+/* Pie de página */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin-top: 50px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #0f0f0f;
+}
+
+.dark-mode h1 {
+  color: #fff;
+}
+body.dark-mode .container {
+  background-color: #222;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}

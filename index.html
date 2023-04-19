@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Plantilla de currículum vitae</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <button id="dark-mode-btn">Modo oscuro</button>
+      <div class="header">
+        <h1>Everardo Alcaraz Baltazar</h1>
+        <h2>(Software engineer)</h2>
+        <p class="subtitle">Personal Profile</p>
+        <p>I am passionate about the technological world and committed to developing innovative solutions for complex problems. I consider myself a creative, resourceful, and results-oriented person, with skills in data analysis, project management, and teamwork. I am passionate about staying up-to-date on the latest technological trends, and I am always looking for opportunities to learn and improve my skills. </p>
+        <img src="https://ca.slack-edge.com/TGJT2DH3L-U04E8JS23R7-aa97ac0237fe-512" alt="Mi foto" style = "width: 10rem; height: 10rem;">
+      </div>
+      <div class="main">
+        <div class="left-column">
+          <h2>Skills</h2>
+          <ul class="skills">
+            <li>JavaScript competent</li>
+            <li>C++ novice</li>
+            <li>React novice</li>
+            <li>Ruby on rails competent</li>
+            <li>Vuejs Advanced beginner</li>
+            <li>Cypress Advanced beginner</li>
+          </ul>
+          <h2>Soft Skills</h2>
+          <ul class="skills">
+            <li>Growth Mindset</li>
+            <li>Effective communication</li>
+            <li>Good Team Player</li>
+            <li>Positive Attitude</li>
+            <li>Time and Task Management</li>
+          </ul>
+          <h2>Languages</h2>
+          <ul class="languages">
+            <li>Spanish - Native</li>
+            <li>English - C1 (Advanced)</li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <h2>Work Experience</h2>
+          <div class="work-experience">
+            <h3>Social service on the Educ platform</h3>
+            <p class="subtitle">Web developer</p>
+            <p>FEB 2022 - OCT 2022</p>
+            <ul>
+              <li>Development of a new version of Educ platform based on Vuejs. This made it easier to maintain and update the platform in the long run.</li>
+              <li>Creation of a Cypress test stack. This involved writing automated tests to ensure that the platform was functioning correctly and that new changes did not introduce any bugs or regressions.</li>
+              <li>Identification and resolution of accessibility issues. This involves identifying any issues that may prevent users with disabilities from accessing or using the platform, such as issues with screen readers, keyboard navigation, or color contrast.</li>
+            </ul>
+            <h3>BrightCoders Academy internship </h3>
+            <p class="subtitle">Rails developer</p>
+            <p>DEC 2022 - AT PRESENT</p>
+            <ul>
+              <li>Working with Rails by developing a small web application for a time clock to register user entry hours. The Model-View-Controller design pattern, database connectivity, user authentication, and CRUD operations were taught.</li>
+              <li>Working with Rails by developing a complete coupon web application(https://procupon.up.railway.app/), including the Model-View-Controller design pattern, database connectivity, user authentication, and CRUD operations.</li>
+            </ul>
+          </div>
+          <h2>Education</h2>
+          <div class="education">
+            <h3>Facultad de Telemática, Universidad de Colima.</h3>
+            <p class="subtitle">On certification process</p>
+            <p>AUG 2019- JUL 2023</p>
+          </div>
+          <h2>Contact</h2>
+          <ul class="contact">
+            <li><strong>Teléfono:</strong> 3121454002</li>
+            <li><strong>Email:</strong> everardoalcarazbaltazar@gmail.com</li>
+            <li><strong>LinkedIn:</strong> https://www.linkedin.com/in/everardo-alcaraz-baltazar-082282248/</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Derechos reservados © Everardo Alcaraz Baltazar, 2023</p>
+      </div>
+    </div>
+    <script>
+    const darkModeBtn = document.getElementById('dark-mode-btn');
+      const body = document.querySelector('body');
+      
+      darkModeBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+      });
+      </script>
+  </body>
+</html>
